@@ -1,0 +1,281 @@
+*{
+    margin: 0px;
+}
+
+.logo img{
+    width: 400px;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 400px;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: grey;
+}
+
+.header{
+    background-image: url(./image\ 14.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.header h1{
+    font-family: sans-serif;
+    font-size: 41px;
+    text-transform: uppercase;
+    color: orangered;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(78, 66, 84);
+    height: 80vh;
+    align-items: center;
+}
+
+.menu img{
+    width: 300px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.menu-headings{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px 5px 6px grey;
+}
+
+.menu .item1,.item2,.item3{
+    width: 300px;
+}
+
+.menu p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    text-align: justify;
+    color: white;
+}
+
+.menu h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+
+.footer{
+    background-color: grey;
+    height: 40vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i{
+    font-size: 35px;
+}
+
+.icons{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+/*this is our team page code*/
+.ot-header{
+     background-image: url(./image\ 19.jpg);
+     height: 80vh;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.ot-header h1{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    margin-left: 30px;
+    
+}
+.Gallery{
+display: grid;
+grid-template-columns: auto auto auto;
+grid-column-gap: 40px;
+grid-row-gap: 20px;
+background-color:palevioletred;
+width: 95%;
+margin: auto;
+padding-top: 10px;
+padding-left: 10px;
+
+}
+.Gallery img{
+width: 300px;
+height: 300px;
+border-radius: 30px;
+transition-property: tranform;
+transition-duration: 1s;
+}
+.gal-heading{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: brown;
+    padding: 10px;
+}
+.Gallery img:hover{
+    transform: scale(1.5);
+}
+/*services page code*/
+.services-header{
+    background-image: url(./image\ 21.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: left;
+    align-items: center;
+   }
+.services-header h1{
+    color:brown;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 80x;
+    margin-left: 30px;
+    background-color: rgb(red, green, blue);
+    }
+.what-we-do{
+    background-color: black;
+    color: white;
+}
+.what-we-do h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: thin;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+}
+.wwd-item{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    justify-content: space-around;
+}
+.wwd-item img{
+    width: 400px;
+    height: 100%;
+    border-radius: 20px ;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+    background-color: orange;     
+    width: 60%;
+    border: 3px solid white;
+}
+/* about us*/
+.about{
+    background-color:goldenrod;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about p{
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+}
+.about h1{
+    font-family: monospace;
+    text-decoration: underline 3px;
+    padding-bottom: 10px;
+}
+.joinus-btn{
+    background-color: white;
+    color: brown;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+/*media queries*/
+@media(max-width:576px){
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        background-color: red;
+        height: 80vh;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .header{
+        background-image: url(./image\ 20.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+    .header h1{
+        color: blue;
+    }
+
+@media(min-width:577px) and (ma-width:768px){
+
+}
+@media(min-width:769px) and (ma-width:991px){
+
+}
+@media(min-width:992px) and (ma-width:1199px){
+
+}
+@media(min-width:1200px) and (ma-width:1400px){
+
+}
+@media(min-width:1401px){
+    
+}
+
+
